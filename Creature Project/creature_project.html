@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creature Project</title>
+    <link rel="stylesheet" href="creature_project.css">
+    
+</head>
+<body>
+    
+
+    <div id="test" class="whalebody1">
+        <div class="fin"></div>
+        <div class="eye"></div>
+            <div class="innereye"></div>
+        <div class="mouth"></div>
+            <div id="tooth1"></div>
+            <div id="tooth2"></div>
+            <div id="tooth3"></div>
+            <div id="tooth4"></div>
+            <div id="tooth5"></div>
+            <div id="tooth6"></div>
+            <div id="tooth7"></div>
+        <div class="blowhole"></div>
+        <div class="tailfin"></div>
+
+    </div>
+   
+    <script type="application/javascript">
+        document.getElementById("test").animate([
+    //javascript keyframes
+    { transform: 'translateX(-1000px)' }, 
+    { transform: 'translateX(2000px)' }
+  ], { 
+    // timing options
+    duration: 3000,
+    iterations: Infinity
+  });
+
+     </script>
+    
+</body>
+</html>

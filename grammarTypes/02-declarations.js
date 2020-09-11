@@ -21,7 +21,7 @@ console.log(a + b);
 
 //! RESTRICTIONS
 /*  
-| - a variqble nqme must begin with a letter, underscore, or a dollar sign
+| - a variable name must begin with a letter, underscore, or a dollar sign
 | - numbers may follow the aboce characterm, BUT cannot come first.
 | - no spaces are allowed ib variable names 
 | - camelCase is the best practice for naming
