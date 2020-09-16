@@ -55,3 +55,67 @@ let anon = function() {
 }
 
 anon();
+
+//! Challenge 2: Take Home Challenge
+/*  
+Create a switch statement that takes in a value (number) that represents a grade.  If it is True, console log that they are passing with the correct letter grade.
+*   A: 89-100
+*   B: 79-88
+*   C: 66-78
+*   D: 59-65
+*   F: 0-59
+
+*/
+
+// let grade = 100;
+// switch(true) {
+//     case (grade == 100):
+//         console.log('You got a perfect score!')
+//         break;
+//     case (grade >= 89):
+//         console.log("You received an A!");
+//         break;
+//     case (grade >= 79):
+//         console.log("You received a B");
+//         break;
+//     case (grade >= 66):
+//         console.log("You got a C");
+//         break;
+//     case (grade >= 59):
+//         console.log ("Uh Oh! You received a D");
+//         break;
+//     case (grade <= 59):
+//         console.log ("Get out");
+// }
+
+
+
+//? Parameters 
+
+// Allow us to accept informaation already declared. 
+
+function parameterFunc(num) {
+    console.log(num)
+}
+parameterFunc(2); 
+parameterFunc(9); 
+
+let returnedVal = 5;
+parameterFunc(returnedVal);
+
+let firstName = 'Jane';
+let lastName = 'Doe';
+
+
+    // first and last are just place holders, they coukd be a, and b and still get the same result
+function greeting(first, last) {
+    console.log(`Hi, ${first}! Welcome back!`);
+    console.log(`This is the first parameter ${first}`);
+    console.log(`This is the last parameter ${last}`);
+}
+
+ //greeting(firstName);
+ //greeting(lastName); 
+// greeting(firstName, lastName); 
+// greeting('', lastName); 
+greeting(firstName, null); 
