@@ -49,7 +49,7 @@
 * ******
 ! IF ELSE
 * ******
-if/else statements allows us the ability to write out a chain of ecents.
+if/else statements allows us the ability to write out a chain of events.
  */
 
  let today = 75;
@@ -76,7 +76,7 @@ if(name == 'Tyler') {
 
 /*
 * **********
-! ELS IF 
+! ELSE IF 
 * ***********
 This is a condition that would be checked if the above condition was not met 
 */

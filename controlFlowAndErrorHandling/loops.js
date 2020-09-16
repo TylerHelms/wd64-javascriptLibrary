@@ -16,7 +16,7 @@ for(let i = 0; i <= 10; i++) {
 
 /*
     We state our loop with a "for"
-    Within thid functionm, we are injecting some parameters that JS will run against
+    Within this functionm, we are injecting some parameters that JS will run against
             (Index; condition; change index -> result)
 
             for(create index variable>; run condition>; <change index>)[
@@ -132,3 +132,4 @@ for(pos of indexArr) {
     for in loops: loops through properties of an object
     for of loops: loops over iterable objects as an arrays and strings *strings can be accessed much in the same way as arrays.
 */
+
