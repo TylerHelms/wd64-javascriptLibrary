@@ -150,4 +150,6 @@ console.log('push: ', movieList);
 movieList.splice(1, 1, 'Return of the Jedi');
 console.log('splice 2: ', movieList); 
 
+//putting this in hear for no reason at all
+
 
