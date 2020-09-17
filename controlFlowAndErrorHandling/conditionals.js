@@ -230,3 +230,18 @@ switch(instructor) {
         break;
         console.log(`Sorry, I can't find what ${instructor} teaches.`); 
 }
+
+
+
+
+for (let x=0; x<=15; x++) {
+    if (x === 0) {
+            console.log(x +  " is even");
+    }
+    else if (x % 2 === 0) {
+            console.log(x + " is even");   
+    }
+    else {
+            console.log(x + " is odd");
+    }
+}
