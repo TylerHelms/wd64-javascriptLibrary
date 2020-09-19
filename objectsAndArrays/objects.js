@@ -124,7 +124,7 @@ let garden = {
     sun: true,
     size: 10
 };
-console.log(baking[garden['vegetable']]); // here we are saying the same thing as we did abovem except we are passing info from object. garden['vegetable'] is the same as 'zucchini' up above. 
+console.log(baking[garden['vegetable']]); // here we are saying the same thing as we did above except we are passing info from object. garden['vegetable'] is the same as 'zucchini' up above. 
 
 let testObj = {
     'Spaces Here': true,

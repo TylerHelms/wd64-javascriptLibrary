@@ -7,3 +7,9 @@
         background-size: cover;
         height: 100vh;   
 }
+
+footer {
+    margin-top: 2em;
+    padding: .5em;
+    height: 10vh;
+}
