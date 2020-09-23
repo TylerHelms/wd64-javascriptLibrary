@@ -119,3 +119,11 @@ function greeting(first, last) {
 // greeting(firstName, lastName); 
 // greeting('', lastName); 
 greeting(firstName, null); 
+
+let firstName = "Tyler";
+let lastName = "Helms";
+
+
+function greeting(first, last) {
+    console.log(firstName)
+}

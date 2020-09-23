@@ -1,0 +1,1 @@
+let url = 'https://rickandmortyapi.com/api/character/';
