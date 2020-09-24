@@ -22,3 +22,22 @@ fetch('https://source.unsplash.com/random')
 .catch(function(err) { 
   console.log(err); 
 });
+
+
+
+
+// let url = 'https://rickandmortyapi.com/api/character/';
+
+// fetch("https://rickandmortyapi.com/api/character/")
+// .then(function(response) {
+//   return respone.json();
+// }) 
+// .then(function(json) {
+//   let people =json.results; 
+  
+//   for(p of people) {
+//     let listItem = document.createElement('li');
+//     listItem.innerHTML = '<p>' + p.name + '</p>';
+//     url.appendChild(listItem); 
+//   }
+// });
