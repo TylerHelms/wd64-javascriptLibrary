@@ -43,7 +43,7 @@ function fetchResults(e) {
     '&page=' + // label pg 
     pageNumber + // pg data
     '&q=' + //query aka search 
-    searchTerm.value; // creates versatile/changeable query string: study ?, &, and &q- when possible!
+    searchTerm.value; // creates versatile/changeable query string: study ?, &, and &q- when possible! value is a built in. 
     console.log("URL:", url); //4 just logs string to see it 
     }
                       
@@ -67,7 +67,7 @@ function fetchResults(e) {
     url = baseURL + '?api-key=' + key + '&page=' + pageNumber + '&q=' + searchTerm.value;
     if(startDate.value !== '') {
         console.log(startDate.value)
-      url += '&begin_date=' + startDate.value;
+      url += '&begin_date=' + startDate.value; //value is built in
     };
   
     if(endDate.value !== '') {
@@ -92,7 +92,8 @@ function fetchResults(e) {
    //while (aka "do while") is a conditional statement: go back reread this module section // the while will clear any search results before new search results are added 
      while (section.firstChild) {  // aka while there is a first child full of 10 articles
          section.removeChild(section.firstChild); // clears previous results/child elements before new results are added if you don't refresh between searches 
-     }
+     } // ^section refers to HTML 
+
     let articles = json.response.docs; 
     if(articles.length === 10) {
         nav.style.display = 'block';  // shows the nav display if 10 items are in the array 
@@ -100,7 +101,10 @@ function fetchResults(e) {
         nav.style.dislay = 'none'; // hides the nav display if less than 10 items are in the array - is this where we hide the page buttons? 
     }
 
-    for(let i = 0; i < articles.length; i++) {
+    if (articles.length ===0) {
+
+    }else {  
+      for (let i = 0; i < articles.length; i++) {
         let article = document.createElement('article');
         let heading = document.createElement('h2');
         let link = document.createElement('a');
@@ -111,8 +115,8 @@ function fetchResults(e) {
         let current = articles[i];
         console.log("Current:", current);
   
-        link.href = current.web_url;
-        link.textContent = current.headline.main;
+        link.href = current.web_url; //current is the object in API and web url is an attribute in that array 
+        link.textContent = current.headline.main;   
   
         para.textContent = 'Keywords: '; 
 
@@ -129,7 +133,7 @@ function fetchResults(e) {
         if(current.multimedia.length > 0) {
           //basically if an image exists for an aritcle 
             img.src = 'http://www.nytimes.com/' + current.multimedia[0].url;
-            img.alt = current.headline.main;
+            img.alt = current.headline.main; 
         }
   
         
@@ -163,6 +167,4 @@ function fetchResults(e) {
       
       };
 
-  
-
- 
+    }     
