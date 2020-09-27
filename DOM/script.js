@@ -42,7 +42,7 @@ console.log(showSpan.textContent);
 console.log(showSpan.innerHTML);
 
 /*
-    - InnerTeext simply reference or allows us to change the text of a specified element. Will return only visible text in a 'node'.
+    - InnerText simply reference or allows us to change the text of a specified element. Will return only visible text in a 'node'.
 
     -textContent does the same thing that innereText does, but will return the FULL text of a 'node'.
 
@@ -55,11 +55,11 @@ let btn = document.getElementById("clickThis");
 
  console.log(btn);
 
-//  btn.addEventListener('click', event => {
-//      event.target.style.backgroundColor = 'blue';
-//      event.target.innerText = 'CLICKED'
-//      console.log(btn); 
-//  });
+ btn.addEventListener('click', event => {
+     event.target.style.backgroundColor = 'blue';
+     event.target.innerText = 'CLICKED'
+     console.log(btn); 
+ });
 
 
 //! Challenge
@@ -80,7 +80,7 @@ btn.addEventListener('click', event => {
 let input = document.getElementById('nameInput');
 
 input.addEventListener('keyup', e => {
-    console.log(e.target.value); //e is short for evemt 
+    console.log(e.target.value); //e is short for event 
     console.log(document.getElementsByTagName('p'))
     document.getElementsByTagName('p')[0].innerText = 'Something Changed';
 
