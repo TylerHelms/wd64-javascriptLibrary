@@ -1,0 +1,19 @@
+.Rick{
+    display: block; 
+    position: absolute;
+    margin-left: 629px;
+    border-radius: 30% 10% 30% 10%;
+    border:  black; 
+    width: 150px;
+    
+}
+
+.Morty{
+position: fixed;
+margin-left: 629px;
+margin-top: 10%;
+border-radius: 10% 30% 10% 30%;
+border: black;
+width: 150px;
+}
+   
