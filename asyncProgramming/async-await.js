@@ -8,7 +8,7 @@
 //? Async Function (syntax)
 /*
     - allows us to make a normal function asynchronous. Can't use "await"
-    -must use the async keyword at the beginning of the function declaration
+    - must use the async keyword at the beginning of the function declaration
 */
 
 async function myFN() {
@@ -46,15 +46,15 @@ fetch('https://random.dog/woof.json')
     // const response = await fetch('https://random.dog/woof.json');
     // const json = await response.json();
     // console.log(json);
-
-    const request = async () => {
-        const response = await fetch('await fetch(https://random.dog/woof.json');
-        const json = await response.json();
-        return json;
-    }
     
-    request().then(json => {
-        console.log(json); 
-    })
+    const request = async () => {
+    const response = await fetch('await fetch(https://random.dog/woof.json');
+    const json = await response.json();
+    return json;
+}
 
-    //practice by connecting to an HTML and messinf wirh it 
+
+request().then(json => {
+    console.log(json); 
+})
+    //practice by connecting to an HTML and messing with it 
