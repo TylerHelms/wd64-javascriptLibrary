@@ -1,25 +1,11 @@
 var express = require('express');
 var router = express.Router();
+var sequelize = require('../db');
 
-router.get('/', function (req, res) {
-    res.send('Hey!!! This is a test route!');
-});
+/* Controller Method #1 */
 
-router.get('/about', function (req, res) {
-    res.send({user: "kenn", email: "kenn@beastmode.com"});
-});
+router.post('/one', function(req, res){
+    res.send("Test 1 went through!")
+}); 
 
-router.get('/projects', function (req, res) {
-    res.send(['Project 1', 'Project 2']);
-});
-
-router.get('/mycontacts', function (req, res) {
-    res.send([
-        {user: "quincy", email: "kenn@beastmode.com"},
-        {user: "aaron", email: "aaron@beastmode.com"},
-        {user: "quincy", email: "quincy@beastmode.com"},
-        {user: "tom", email: "tom@beastmode.com"}
-    ]);
-});
-
-module.exports = router; 
+module.exports = router;
